@@ -1,0 +1,25 @@
+; Keywords that are used to process indentation for VBSBeaut.
+; format: <#indent>,<keyword(s)>[,singleline (0|1)]
+
+1,do while
+1,do until
+1,if
+1,for
+1,function
+1,sub
+1,with
+-1,end if
+-1,end function
+-1,end sub
+-1,end with
+-1,next
+-1,loop
+2,select case
+-2,end select
+-1,case else,1
+-1,elseif,1
+-1,else,1
+-1,case,1
+0,exit for
+0,exit function
+
