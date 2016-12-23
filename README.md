@@ -20,7 +20,7 @@ Instructions:
 -------------
 This is the Perl source code of the beautifier.
 Run it from the commandline with parameters:
-
+```
 Usage: vbsbeaut [options] [files]
 
 options:
@@ -30,7 +30,7 @@ options:
  -l         Make keywords lowercase.
  -n         Don\'t change keywords.
  -d         Don\'t split Dim statements.
-
+```
 
 IMPORTANT: Make sure the VBScript code works before you
 try to beautify it.
