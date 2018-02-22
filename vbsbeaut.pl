@@ -295,7 +295,7 @@ sub get_keywords_indent {
     my @singleline_keywords = ();
     my %indents;
     foreach my $line (<FILE>) {
-		$line =~ s/\015?\012?$//;
+        $line =~ s/\015?\012?$//;
         next if ( $line =~ m/^\s*$/ );
         next if ( $line =~ m/;/ );       # this is a line with comments....
         my ( $indent, $words, $singleline ) = split( /,/, $line );
@@ -356,7 +356,7 @@ sub replacekeywords {
     my @keywords = split( /\n/, $keywordsstring );
     foreach my $line (@$lines) {
         foreach my $keyword (@keywords) {
-			$keyword =~ s/\015?\012?$//;
+            $keyword =~ s/\015?\012?$//;
             $keyword = uc($keyword) if ( $options{'u'} );
             $keyword = lc($keyword) if ( $options{'l'} );
             $line =~
